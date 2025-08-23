@@ -23,34 +23,17 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Mod
 <button class="btn" onmouseover="msgs.innerHTML='Mengirim payload ke port 9020'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_binloader()"> Bin Loader </button>
 <br>
 <h1 style="font-size: 18px;">Payloads</h1>
-<button class="btn" onmouseover="msgs.innerHTML='Enable Some Debugging Functions Available on TestKit'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_todex()"> ToDex </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump Games ke USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_dumper()"> App-Dumper </button>
-<button class="btn" onmouseover="msgs.innerHTML='Access this console Through FTP (Be careful what you do)'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_ftp()"> FTP </button>
-<button class="btn" onmouseover="msgs.innerHTML='Transfer Installed Games to USB Drive in exFAT'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_app2usb()"> App2USB </button>
-<button class="btn" onmouseover="msgs.innerHTML='Membuat backup DB ke flashdisk'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_dbackup()"> DB Backup </button>
-<button class="btn" onmouseover="msgs.innerHTML='Restore a Backup of the Database and Users from a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_dbrestore()"> DB Restore </button>
+<button class="btn" onmouseover="msgs.innerHTML='Atur Kecepatan Kipas PS'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_fanthreshold()"> Setting Kipas </button><select id="tempC"></select>&#176;C
+<br>
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='Enable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_enablebUpdates()"> Enable Updates </button>
 <button class="btn" onmouseover="msgs.innerHTML='Disable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_disableUpdates()"> Disable Updates </button>
-<button class="btn" onmouseover="msgs.innerHTML='Enable/Disable Browser History.'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_historyBlocker()"> History Blocker </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump a Console Kernel to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_kernelDump()"> Kernel Dumper </button>
-<button class="btn" onmouseover="msgs.innerHTML='Dump a Kernel Module to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_moduleDump()"> Module Dumper </button>
+<br>
 <button class="btn" onmouseover="msgs.innerHTML='PS4 Debug Untuk 9.00'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_ps4debug()"> PS4 Debug </button>
 <br>
-<button class="btn" onmouseover="msgs.innerHTML='Disables the ASLR (Address space layout randomization)'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_disbAslr()"> Disable ASLR </button>
-<button class="btn" onmouseover="msgs.innerHTML='Disable IDU Mode if you have activated it by mistake'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_exitidu()"> Exit IDU </button>
-<button class="btn" onmouseover="msgs.innerHTML='Renames (fake) RIFs to (free) RIFs'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_rifRen()"> RIF Renamer </button>
-<button class="btn" onmouseover="msgs.innerHTML='Permanent UART for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_permUart()"> Permanent UART </button>
-<button class="btn" onmouseover="msgs.innerHTML='Required to Activate Cheats Through the PS4 Trainer Website'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_webrte()"> WebRTE </button>
+<h1 style="font-size: 18px;color: yellow;">MENU DI BAWAH MEMERLUKAN INTERNET</h1>
 <a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-onln" onmouseover="msgs.innerHTML='PS4 Trainer Website (Follow Instructions There)'" onmouseout="msgs.innerHTML='PS4 9.00'"> PS4 Trainer Web </button></a>
-<br>
-<a href="webactivator.html"><button class="btn" onmouseover="msgs.innerHTML='Activate Your User Account from the Console Browser'" onmouseout="msgs.innerHTML='PS4 9.00'" style="margin-left: 72px;"> Web-Activator </button></a>
-<button class="btn" onmouseover="msgs.innerHTML='Linux Loaders Menu'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="linux_group()"> Linux Loaders </button>
-<button class="btn btn-toolbox" onmouseover="msgs.innerHTML='Orbis ToolBox Alpha 1190 for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_toolbox()"> Orbis-Toolbox </button>
-<button class="btn" onmouseover="msgs.innerHTML='Atur Kecepatan Kipas PS$'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_fanthreshold()"> Setting Kipas </button><select id="tempC"></select>&#176;C
-<br>
-<h1 style="font-size: 18px;color: yellow;">Online Payloads</h1>
-<button class="btn btn-onln" onclick="mods_group()" style="margin-bottom: 11px;width: 468px;"> Menu Lainnya </button>
+<button class="btn btn-onln" onclick="mods_group()" style="margin-bottom: 11px;width: 468px;"> MOD GTA 5 & RDR 2 </button>
 </div>
 <div id="lnx">
 <h1 style="font-size: 18px;">Linux Payloads</h1>
@@ -69,7 +52,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Mod
 <button class="btn" onmouseover="msgs.innerHTML='Return to Main Menu'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_menu()" style="margin-bottom: 229px"> Kembali </button>
 </div>
 <div id="mods">
-<h1 style="font-size: 18px;color: yellow;">Online Payloads</h1>
+<h1 style="font-size: 18px;color: yellow;">MOD INI MEMERLUKAN INTERNET</h1>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.00 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_arabicGuy100()"> Arabic Guy v1.00 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.27 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_arabicGuy127()"> Arabic Guy v1.27 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.32 (L1 + R1)'" onmouseout="msgs.innerHTML='PS4 9.00'" onclick="load_arabicGuy132()"> Arabic Guy v1.32 </button>
@@ -414,8 +397,8 @@ load_poc();
 }
 
 function load_fanthreshold(){
-msgs.innerHTML="Loading Fan Threshold... Antosan"
-LoadedMSG = "Fan Threshold Loaded ..."
+msgs.innerHTML="Mengaktifkan Kipas... Antosan"
+LoadedMSG = "Kipas Sudah Aktiv Boskuhhh ..."
 PLfile = "fan-threshold"+tempC.value+".bin";
 load_poc();
 }
@@ -665,3 +648,4 @@ load_poc();
 </script>
 </body>
 </html>
+
