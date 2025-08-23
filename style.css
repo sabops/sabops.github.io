@@ -20,6 +20,34 @@ a {
     text-decoration: none;
 }
 
+#progress {
+    display: block;
+}
+
+#menu {
+    display: block;
+}
+
+#crypto {
+    display: none;
+}
+
+#tools {
+    display: none;
+}
+
+#lnx {
+    display: none;
+}
+
+#mods {
+    display: none;
+}
+
+#console {
+    display: none;
+}
+
 .btn {
     background-color: #ccdbce;
     color: black;
@@ -39,5 +67,29 @@ a {
 }
 
 .btn:hover {
-    background-color: #e3f700;
+    background-color: #ff03cd;
+}
+
+.btn-alt {
+    background-color: #b10000;
+}
+
+.btn-alt:hover {
+    background-color: #f31414;
+}
+
+.btn-onln {
+    background-color: #076300;
+}
+
+.btn-onln:hover {
+    background-color: #18891b;
+}
+
+.btn-toolbox {
+    background-color: #ae2301;
+}
+
+.btn-toolbox:hover {
+    background-color: #d42a01;
 }
